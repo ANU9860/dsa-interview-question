@@ -1,0 +1,17 @@
+Answer:
+int countDigits(int n){
+	int l=n;
+	int count =0;
+	while(l>0)
+	{
+		int ld=l%10;
+		if (ld!=0)
+		{
+			count=count+(n%ld==0);
+		}
+
+		
+		l=l/10;
+	}	
+	return count;
+}
